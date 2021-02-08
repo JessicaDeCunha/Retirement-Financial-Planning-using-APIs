@@ -4,7 +4,6 @@ The following budget analysis is based off of financial data sourced through Pla
 
 ## Budget Anaysis 
 
-
 Below is an transaction table over the most recent 90 days sourced from the account followed by the previous years gross income, currently monthyl income and projected yearly income. Below the table is a pie chart visualizing the distribution of transactions from the expense table.
 
 

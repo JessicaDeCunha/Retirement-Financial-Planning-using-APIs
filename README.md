@@ -44,8 +44,6 @@ In this section, the Alpaca API was used to fetch historical closing prices for 
 
 #### Monte Carlo Simulation
 
-Create a Monte Carlo simulation for the retirement portfolio:
-
 1. Use the Alpaca API to fetch historical closing prices for a traditional 60/40 portfolio using the `SPY` and `AGG` tickers to represent the `60%` stocks (`SPY`) and `40%` bonds (`AGG`).
 
 2. Run a Monte Carlo simulation of `500` runs and `30` years for the `60/40` portfolio and plot the results.
@@ -58,9 +56,16 @@ Create a Monte Carlo simulation for the retirement portfolio:
 
     ![histogram](Images/histogram.png)
 
-#### Retirement Analysis
 
-Use the Monte Carlo simulation we to answer the following questions:
+### Retirement Analysus & Financial Report
+
+In the Financial Planner .md, you will find the following sections:
+
+1. **Budget Analysis:** A Summary of the transaction data from the budget analysis and images for each chart and table produced.
+
+2. **Retirement Planning:** A Summary of the retirement portfolio analysis and the charts for the Monte Carlo simulation.
+
+Using the Monte Carlo simulation we are able to answer the following questions. You can view the answers in the Financial Planner Summary .md
 
 1. What are the expected cumulative returns at `30` years for the `10th`, `50th`, and `90th` percentiles?
 
@@ -73,14 +78,6 @@ Use the Monte Carlo simulation we to answer the following questions:
 5. (Optional Challenge +5 bonus points) Use the Monte Carlo data and calculate the cumulative returns at the `5%`, `50%`, and `95%` quartiles and plot this data as a line chart to see how the cumulative returns change over the life of the investment.
 
     ![projected-returns.png](Images/projected-returns.png)
-
-### Financial Report
-
-In the Financial Planner .md, you will find the following sections:
-
-1. **Budget Analysis:** A Summary of the transaction data from the budget analysis and images for each chart and table produced.
-
-2. **Retirement Planning:** A Summary of the retirement portfolio analysis and the charts for the Monte Carlo simulation.
 
 ### Optional Challenge — Early Retirement - Up to 10 bonus points
 
