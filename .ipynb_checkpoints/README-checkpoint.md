@@ -1,11 +1,26 @@
-# API Budget Analysis; Retirement Planner
+# Unit 5 — How do you like them apps?
+
+![Financial Planner](Images/financial-planner.png)
 
 ## Background
 
-This application offers budgeting and financial planning services to customers by generating reports that links to their banking and investment accounts and automatically refreshes the data and charts on login. However, some of the calculations are tricky, To connect the accounts and simulate the retirement investment projections. I have generated a Plaid API and Alpaca API to obtain account transactions and fetch retirement portfolio prices.
+The Consumer Division of Harold's company has decided to offer budgeting and financial planning services to customers. They want to build a report for customers that links to their banking and investment accounts and automatically refreshes the data and charts upon login. However, some of the calculations are tricky, and Harold could use some help connecting the accounts and simulating the retirement investment projections. Luckily, there are APIs available to obtain account transactions and fetch retirement portfolio prices.
 
+In this homework assignment, you will help Harold complete the following tasks:
 
-Included in this repo is a budgest analysis with Plaid, a retirement planner and a financial report summarizing the results. 
+1. [Budget Analysis with Plaid](#Budget-Analysis)
+
+2. [Retirement Planner](#Retirement-Planner)
+
+3. [Financial Report](#Financial-Report)
+
+---
+
+### Files
+
+* [Budget Starter Notebook](Starter_Code/account_summary.ipynb)
+
+* [Retirement Planner Starter Notebook](Starter_Code/portfolio_planner.ipynb)
 
 ---
 
@@ -15,7 +30,7 @@ Included in this repo is a budgest analysis with Plaid, a retirement planner and
 
 In this section, you will use the Plaid API to obtain transaction and account data for the budget analysis section of the report.
 
-Follow the steps outlined in the budget notebook (`account_summary.ipynb`) to complete the following:
+Follow the steps outlined in the budget starter notebook (`account_summary.ipynb`) to complete the following:
 
 1. Generate a Plaid access token to access the Developer Sandbox.
 
@@ -25,12 +40,15 @@ Follow the steps outlined in the budget notebook (`account_summary.ipynb`) to co
     INSTITUTION_ID = "ins_109508"
     ```
 
-3. Perform basic budget analysis on the sandbox transaction and generate plots for the following:
+3. Perform basic budget analysis on the sandbox transaction and generate the following plots:
 
     * Spending Categories Pie Chart.
 
+      ![Expenses per category](Images/spending-pie.png)
+
     * Spending Per Month Bar Chart.
 
+      ![Expenses per month](Images/spending-month.png)
 
 4. Use the API to fetch income data from the sandbox and print the following:
 
@@ -80,11 +98,11 @@ Use the Monte Carlo simulation data to answer the following questions:
 
 ### Financial Report
 
-In the Financial Planner .md, you will find the following sections:
+In this section, you will compile a financial report to demo your calculations to the Consumer App Team. The report should be written as a markdown file and include the following sections:
 
-1. **Budget Analysis:** A Summary of the transaction data from the budget analysis and images for each chart and table produced.
+1. **Budget Analysis:** Summarize the transaction data from the budget analysis and include images for each chart and table produced.
 
-2. **Retirement Planning:** A Summary of the retirement portfolio analysis and the charts for the Monte Carlo simulation.
+2. **Retirement Planning:** Summarize the retirement portfolio analysis and include the charts for the Monte Carlo simulation.
 
 ### Optional Challenge — Early Retirement - Up to 10 bonus points
 
@@ -98,6 +116,24 @@ Harold is impressed with your work on this planner, but thinks that `30` years s
 
 * [AlpacaDOCS](https://alpaca.markets/docs/)
 
+* [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 
 ---
 
+### Hints and Considerations
+
+* For the Monte Carlo simulation, start out by running `100` simulations for one year of returns, and when you have the code worked out, run the simulation at `100–500` simulations for `30` years (this takes a long time).
+
+---
+
+### Submission
+
+* Create Jupyter Notebooks for the analysis and planner and host the notebooks on GitHub.
+
+* Include a Markdown Financial Planner report that summarizes your assumptions and findings and include this report in your GitHub repo.
+
+* Submit the link to your GitHub project to Bootcampspot.
+
+---
+
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
