@@ -9,21 +9,16 @@ Included in this repo is a budgest analysis with Plaid, a retirement planner and
 
 ---
 
-## Instructions
+## Notebooks
 
 ### Budget Analysis
 
-In this section, you will use the Plaid API to obtain transaction and account data for the budget analysis section of the report.
+The budget analysis uses the Plaid API to obtain transaction and account data. The following steps outlined below were performed to produce the report
 
-Follow the steps outlined in the budget notebook (`account_summary.ipynb`) to complete the following:
 
 1. Generate a Plaid access token to access the Developer Sandbox.
 
-2. Use the Access token to fetch account transactions from the sandbox. You should fetch the last 90 days of transactions from the sandbox using the following institution:
-
-    ```python
-    INSTITUTION_ID = "ins_109508"
-    ```
+2. Use the Access token to fetch account transactions from the sandbox. Fetch the last 90 days of transactions from the sandbox.
 
 3. Perform basic budget analysis on the sandbox transaction and generate plots for the following:
 
@@ -34,17 +29,15 @@ Follow the steps outlined in the budget notebook (`account_summary.ipynb`) to co
 
 4. Use the API to fetch income data from the sandbox and print the following:
 
-* Last Year's Income Before Tax.
+    * Last Year's Income Before Tax.
 
-* Current Monthly Income.
+    * Current Monthly Income.
 
-* Projected Year's Income Before Tax.
+    * Projected Year's Income Before Tax.
 
 ### Retirement Planner
 
-In this section, you will use the Alpaca API to fetch historical closing prices for a retirement portfolio and then run Monte Carlo simulations to project the portfolio performance at `30` years. You will then use the Monte Carlo data to answer questions about the portfolio.
-
-Follow the steps outlined in the budget starter notebook to complete the following:
+In this section, the Alpaca API was used to fetch historical closing prices for a retirement portfolio. Then I ran a Monte Carlo simulations to project the portfolio performance at 30 years. The following steps outlined below were performed to produce the report 
 
 #### Monte Carlo Simulation
 
@@ -54,7 +47,7 @@ Create a Monte Carlo simulation for the retirement portfolio:
 
 2. Run a Monte Carlo simulation of `500` runs and `30` years for the `60/40` portfolio and plot the results.
 
-    ![monte carlo](Images/monte-carlo.png)
+    ![monte carlo](Images/monte_carlo_simulation_forecast.png)
 
 3. Select the ending cumulative returns from the Monte Carlo simulation and calculate the interval values for a `90`% confidence interval.
 
