@@ -23,9 +23,12 @@ The budget analysis uses the Plaid API to obtain transaction and account data. T
 3. Perform basic budget analysis on the sandbox transaction and generate plots for the following:
 
     * Spending Categories Pie Chart.
+    
+    ![pie_chart](Images/spending_category_chart.png)
 
     * Spending Per Month Bar Chart.
-
+    
+    ![bar_chart](Images/total_monthly_expenses.png)
 
 4. Use the API to fetch income data from the sandbox and print the following:
 
@@ -57,7 +60,7 @@ Create a Monte Carlo simulation for the retirement portfolio:
 
 #### Retirement Analysis
 
-Use the Monte Carlo simulation data to answer the following questions:
+Use the Monte Carlo simulation we to answer the following questions:
 
 1. What are the expected cumulative returns at `30` years for the `10th`, `50th`, and `90th` percentiles?
 
